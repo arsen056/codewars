@@ -14,11 +14,8 @@ function isSmile(smile) {
     if ([':',';'].includes(smile[0])) {
         if (['-', '~'].includes(smile[1])) {
             return [')', 'D'].includes(smile[2]);
-            
         }
-
         return [')', 'D'].includes(smile[1]);
-
     }
     return false
 }
